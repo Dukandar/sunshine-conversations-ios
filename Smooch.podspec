@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.frameworks            = "Smooch", "CoreText", "SystemConfiguration", "CoreTelephony", "Foundation", "CoreGraphics", "UIKit", "QuartzCore", "AssetsLibrary", "Photos", "AVFoundation", "CFNetwork"
   s.library               = "icucore"
   s.xcconfig              = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Smooch" }
+  s.source_files          = "Sources/*.swift"
+  s.swift_version         = '5.0'
   s.vendored_frameworks   = "Smooch.xcframework"
   s.requires_arc          = true
   s.platform              = :ios, :visionos
