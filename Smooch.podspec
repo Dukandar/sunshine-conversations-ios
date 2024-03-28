@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.xcconfig              = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Smooch" }
   s.vendored_frameworks   = "Smooch.xcframework"
   s.requires_arc          = true
-  s.platform              = :ios
+  s.platform              = :ios, :visionos
   s.ios.deployment_target = '12.0'
   s.visionos.deployment_target = '1.0'
 end
