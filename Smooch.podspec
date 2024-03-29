@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author                = { "Smooch Technologies Inc." => "help@smooch.io" }
   s.source 	              = { :git => "https://github.com/zendesk/sunshine-conversations-ios.git", :tag => s.version.to_s }
   s.preserve_paths        = "Smooch.xcframework/*"
-  s.frameworks            = "Smooch", "CoreText", "SystemConfiguration", "CoreTelephony", "Foundation", "CoreGraphics", "UIKit", "QuartzCore", "AssetsLibrary", "Photos", "AVFoundation", "CFNetwork"
+  s.frameworks            = "Smooch", "CoreText", "SystemConfiguration", "CoreTelephony", "Foundation", "CoreGraphics", "UIKit", "QuartzCore", "Photos", "AVFoundation", "CFNetwork"
   s.library               = "icucore"
   s.xcconfig              = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Smooch" }
   s.source_files          = "Sources/*.swift"
